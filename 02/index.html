@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGininder</title> <!-- 瀏覽器的標題 -->
+</head>
+<body>
+    <!--這個div 是打算包住整個畫面用的，並放入標題及背景圖片-->
+    <div id="background">
+
+        <!--自我介紹div-->
+        <div id="intro">
+            <!--運用行內元素span,把你要單獨改變的文字起來，再到style改變型式-->
+            <h1>I am <span class="name">GG</span> ,</h1>
+            <p> ininder.</p>
+        </div>
+    </div>
+
+
+    <style>
+        body{
+        /*把Body的 margin 白邊去掉*/
+            margin: 0;
+        }
+
+        .name {
+            color: #cb997e;
+        }
+
+
+        /*設定背景色*/
+        #background{
+            height: 100vh; /*vh是一個相對的單位，他代表裝置的高度/ 100，可以填滿整個螢幕  */
+            background-color: pink; /*背景填滿顏色*/
+            /*background-image 用來更換背景圖片，網址需要用url("圖片檔案")去包起來*/
+            background-image: url("dog.jpg");
+            /*用來調整背景大小,cover這個屬性，可以把背景放到跟螢幕吻合且不重複的尺寸，*/
+            background-size: cover;
+        }
+
+        #intro{
+        /*上邊外距 200px*/
+            padding-top: 150px;
+        }
+
+
+        /*讓字變大*/
+        /*選擇器中 空白 代表前面選擇器的 小孩*/
+        #intro h1{
+            font-size: 40px;
+            padding-left: 40px;
+            /* color: #加六位數的顏色號碼*/
+            color:#ffe8d6;
+            margin-bottom: 10px;
+
+        }
+        
+        #intro p{
+            /*字體大小 28px*/
+            font-size: 35px;
+            /*左邊內距 36px*/
+            padding-left: 150px;
+            margin-top: 0px;
+            color: #f0efeb;
+            
+        }
+        
+        
+            
+
+    </style>
+</body>
+</html>

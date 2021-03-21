@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--引用外部Css的語法-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--id 同名字的整個網頁，只能有一個-->
+    <h1 id="myheading">大標題</h1> <!--宣告此h1 的id 為 myheading-->
+    <!--class 可以用來標籤進行分類，所以同一份html可以有很多一樣的class-->
+    <h1 class="colorgray">另一個標題</h1>
+
+    <h1 id style="color:gold">小標題</h1>
+
+    <!--p style用來改變內文的樣式-->
+    <p style="color:darkorange; font-size: 30px;" >這是一個段落</p> <!--Html宣告屬性的寫法-->
+    <p>這是第二個段落</p>
+
+    <!--CSS寫法-->
+    </body>
+</html>
+
+
+
+<!--
+    CSS 可以寫在哪裡?
+    1.HTML 標籤中的 style 屬性
+        <h1 style="color: red;">
+            我用 style 屬性來改變標題顏色
+        </h1>
+
+    2.HTML 的 <style> 標籤
+        <style>
+        h1 {
+            color: pink;
+        }
+        </style>
+        <h1>
+            我會是粉紅色的字
+        </h1>
+        
+    3.獨立的 .css 檔案，搭配 <link> 標籤引入到 html 文件中
+        /* 檔名：style.css */
+        h1 {
+            color: blue;
+        }
+        <html>
+            <head>
+                <link href="外部css檔案的路徑.css" rel="stylesheet">
+            </head>
+            <body>
+                <h1>
+                    我的顏色會被外部 css 檔案的規則改變
+                </h1>
+            </body>
+        </html>
+
+-->
